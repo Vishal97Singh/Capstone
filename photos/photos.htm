@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+    <link href="https://www.firstpost.com/assets/css/firstcricket/bootstrap.css?v=3.68" rel="stylesheet" type="text/css" />
+	
+ 	        <link rel="canonical" href="https://www.firstpost.com/firstcricket/photo-gallery/" />
+    
+     
+
+
+   
+     
+
+	 	<style>.Mumbai td:nth-child(1) span{background:#2475ce}.Mumbai td:nth-child(2){color:#2475ce}.Chennai td:nth-child(1) span{background:#eeaf00}.Chennai td:nth-child(2){color:#eeaf00}.Punjab td:nth-child(1) span{background:#903233}.Punjab td:nth-child(2){color:#903233}.Rajasthan td:nth-child(1) span{background:#1d5c87}.Rajasthan td:nth-child(2){color:#1d5c87}.Delhi td:nth-child(1) span{background:#e03f45}.Delhi td:nth-child(2){color:#e03f45}.Hyderabad td:nth-child(1) span{background:#f73b0e}.Hyderabad td:nth-child(2){color:#f73b0e}.Kolkata td:nth-child(1) span{background:#7a4ab0}.Kolkata td:nth-child(2){color:#7a4ab0}.Bangalore td:nth-child(1) span{background:#c43843}.Bangalore td:nth-child(2){color:#c43843}
+.points-table{text-align:center}.points-table header{background:#4b922a!important}.points-table header .p-table-heading{font-size:14px;text-transform:uppercase;color:#fff;margin:0;padding:0 10px;text-align:left}.points-table .table tbody{background:#fff}.points-table .table tbody tr:nth-child(odd){background:#f0f0f0}.points-table .table tbody th{background:#666;color:#fff;padding:8px 5px;font-weight:400}.points-table .table tbody tr td{border-right:#ccc solid 1px;border-left:#ccc solid 1px;padding:0 5px;height:35px}.points-table .table tbody tr td:nth-child(1){text-align:center}.points-table .table tbody tr td:nth-child(1) span{width:20px;height:20px;border-radius:50px;color:#fff;display:inline-block;font-size:11px;padding-top:2px}.points-table .table tbody tr td:nth-child(2){text-align:left;font-weight:600}.wrapper .content .main-top-head h1{display:block;width:100%;margin-bottom:5px}@media (max-width:768px){.points-table{margin:15px 8px 0 8px}}</style>
+	<style type="text/css">
+		.equation{padding-top:10px;margin-bottom:10px;color: #39c;font-size:18px;padding-left:10px;}
+		.insider-content.scoreboard .match-tabs .fpcommentary .innerContent .live-blog ul li .desc img.milestone{
+			display: block; 
+			vertical-align: top; 
+			width: 50px; 
+			margin: 10px auto;
+			height: auto;
+		}
+		/*	Only Desktop	*/
+		@media screen and (min-width: 701px){
+			.wrapper header.cricket-live-board .owl-stage-outer{
+				max-height: 77px;
+			}
+		}
+		/*	Mobile	*/
+		@media screen and (max-width: 700px){
+			.equation{
+				font-size: 15px;
+			}
+			.wrapper header.cricket-live-board{
+				padding: 0px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .owl-nav{
+				top: 4px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .owl-nav .owl-prev,
+			.wrapper header.cricket-live-board .owl-carousel .owl-nav .owl-next{
+				margin: 0px;	
+				width: 20px;
+				height: 20px;
+				background-size: 100% auto;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .owl-nav .owl-prev{
+				left: 3px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .owl-nav .owl-next{
+				right: 3px;
+			}
+			.wrapper header.cricket-live-board .owl-stage-outer{
+				border-radius: 0px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .item .match .outer .head{
+				height: 28px;
+			}
+			/*.wrapper header.cricket-live-board .owl-carousel .item .match .outer .head{
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}*/
+			.wrapper header.cricket-live-board .owl-carousel .item .match{
+				padding-top: 20px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .item .match:before{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -38px;
+				height: 22px !important;
+				line-height: 1 !important;
+				width: 76px !important;
+				padding: 3px 10px;
+				border-radius: 0px;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .item .match .outer{
+				width: 50%;
+				float: left;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .item .match .outer:only-child{
+				width: 96%;
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			.wrapper header.cricket-live-board .owl-carousel .item .match .outer .match-bet span:nth-child(2){
+				margin: 0 2px;
+			}
+		}
+
+		.wrapper .content .main-story .owl-carousel .item a {
+			color: #FFF;
+		}
+		.wrapper .content .main-story .owl-carousel .item a h2{
+			font-size: 24px;
+			line-height: 1.3
+		}
+		.wrapper .content .main-story .owl-carousel .item a .desc{
+			background: rgba(0,0,0,0.3);
+			background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+			background: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+			background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+		}
+
+		.wrapper .content .main-top-head h1{
+			font-family: Oswald,sans-serif;
+			letter-spacing: 0px;
+		}
+
+		.wrapper .content .grid-story ul li .item .desc h3{
+		    line-height: 1.4;
+		    height: 60px;
+		    overflow: hidden;
+		}
+
+		.wrapper header .brand{
+			float: left;
+		}
+		.clear-menu-btn input[type=checkbox]{
+			width: 30px;
+		}
+		.wrapper .content .main-top-head .scoreboard-head h2{color: #666;font-size: 16px;margin: 0 0 10px 0}
+      .wrapper .content .main-top-head{padding-bottom: 0px;}
+      .insider-content.scoreboard .tabs-outer,
+      .wrapper .content .main-top-head .scoreboard-head .desc{padding: 0 0 5px 0}
+      .insider-content{padding-top: 0px;}
+      .insider-content .nav-pills{margin-top: 0px}
+      .insider-content.scoreboard .match-tabs .fpcommentary .innerContent{padding-top: 8px}
+      .floating-bottom {
+    position: fixed!important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+        z-index: 1;
+}
+.style-h2{
+	font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: -1px;
+    margin: 10px 0;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 0px;
+}
+.active> a {
+	color: #00ffd0;
+}
+	</style>
+<!-- Facebook Pixel Code -->
+ 
+<!-- End Facebook Pixel Code -->
+
+    <!-- Quora Pixel Code (JS Helper) -->
+   
+    
+</head>
+<body id="top" data-spy="scroll" data-target="#myScrollspy"  background="images/body.jpg" >
+  
+<div id="fb-root"></div>
+
+
+
+<div class="wrapper">
+	<div class="header-wrap">
+	
+	
+		<div class="container">
+		
+		</div>
+		<header>
+			<div class="container">
+				<div class="col-md-6 col-xs-6">
+					<div class="navbar-header visible-xs">
+			            <div class="clear-menu-btn " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			              	<input type="checkbox">
+							<span class="top"></span>
+							<span class="middle"></span>
+							<span class="bottom"></span>
+			            <
+			  
+				<div id="navbar" class="collapse">
+		            <ul class="nav navbar-nav">
+		             <li><a href="https://www.firstpost.com/firstcricket/">HOME</a></li>
+		              <li><a href="https://www.firstpost.com/firstcricket/cricket-schedule/">schedule</a></li>
+		              <li><a href="https://www.firstpost.com/firstcricket/results/">RESULTS</a></li>
+		              <li><a href="https://www.firstpost.com/firstcricket/sports-news/">NEWS</a></li>
+		              <li><a href="https://www.firstpost.com/firstcricket/teams-ranking">Ranking</a></li>
+		              
+		              
+		               		               <li><a href="https://www.firstpost.com/firstcricket/series/asia-cup-2018.html" title="Asia Cup 2018">Asia Cup 2018</a></li>
+		              
+
+		            </ul>
+		        
+	          </div><!--/.nav-collapse -->
+			</div>
+                    	</div>
+                	</div>
+            	</div>
+		</header>
+	
+   		
+		
+		<style type="text/css">
+		.ad.fc-top-ad{background: #182739;padding:0 0 5px 0;}
+		</style>
+		<!-- Navbar Starts-->
+			<nav class="navbar navbar-default hidden-xs" style="background-color:darkgrey">
+	        <div class="container">
+	          <div class="navbar-collapse collapse" >
+                    <nav>
+	           <ul class="nav navbar-nav"  >	             	  
+	             	  <li id="home"><a href="https://www.firstpost.com/firstcricket/" title="Firstcricket"><span style="color:darkviolet">Home</span></a></li>		              
+		              <li class=""><a href="https://www.firstpost.com/firstcricket/cricket-schedule/" title="Schedule"><span  style="color:darkviolet">schedule</span></a></li>		              
+		              <li class=""><a href="https://www.firstpost.com/firstcricket/results/" title="RESULTS"><span style="color:darkviolet">RESULTS</span></a></li>
+		              <li id="news"><a href="https://www.firstpost.com/firstcricket/sports-news/" title="NEWS"><span style="color:darkviolet">NEWS</span></a></li>
+		              <li class=""><a href="https://www.firstpost.com/firstcricket/teams-ranking/" title="Ranking"><span style="color:darkviolet">Ranking</span></a></li>
+		              <li class="active"><a href="https://www.firstpost.com/firstcricket/photo-gallery/" title="Photos"><span style="color:darkviolet">Photos</span></a></li>
+		              <li class=""><a href="https://www.firstpost.com/firstcricket/cricket-videos/" title="Videos"><span style="color:darkviolet">Videos</span></a></li>
+		             		              	 
+		              		         </ul>
+                  </nav>        
+	          </div><!--/.nav-collapse -->
+	        </div><!--/.container-fluid -->
+	    </nav>
+	    
+	    
+		<!-- Navbar Ends-->
+<section class="content">
+	<div class="container">
+		<div class="col-lg-9 col-md-8">
+			<div class="main-top-head clearfix">
+      					
+						    
+                <h1>Cricket Photos</h1>
+                
+
+                <div class="clearfix text-center pull-right news-pager hidden-xs">
+                  	  <!-- Pagination Widget Start -->
+                  		               <nav aria-label="Page navigation example" class="pagination-wrap">
+                  <ul class="pagination">
+                                                                                                             <li class="page-item"><a class="page-link active" href="https://www.firstpost.com/firstcricket/photo-gallery/page/1">1</a></li>
+                                                                                        <li class="page-item"><a class="page-link " href="https://www.firstpost.com/firstcricket/photo-gallery/page/2">2</a></li>
+                                                                                        <li class="page-item"><a class="page-link " href="https://www.firstpost.com/firstcricket/photo-gallery/page/3">3</a></li>
+                    
+                    
+                                        <li class="page-item">
+                      <a rel="next" class="page-link" href="https://www.firstpost.com/firstcricket/photo-gallery/page/2" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                                      </ul>
+                </nav><!--pagination-->              
+                    <!-- Pagination Widget End -->						
+  
+                </div>
+            </div>
+
+             <div class="grid-story clearfix ">
+    					<ul>
+    						
+
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/india-win-seventh-asia-cup-trophy-after-nail-biting-match-with-bangladesh-5285741.html" alt="India win seventh Asia Cup trophy after nail-biting match with Bangladesh" title="India win seventh Asia Cup trophy after nail-biting match with Bangladesh" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="India win seventh Asia Cup trophy after nail-biting match with Bangladesh" title="India win seventh Asia Cup trophy after nail-biting match with Bangladesh" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/India-Team-940-AP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>India win seventh Asia Cup trophy after nail-biting match with Bangladesh</h3>
+    									<div class="date">Sep 29, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/mohammad-shahzads-ton-helps-afghanistan-pull-off-tie-against-india-in-asia-cup-super-4-clash-5268431.html" alt="Mohammad Shahzad's ton helps Afghanistan pull off tie against India in Asia Cup Super 4 clash" title="Mohammad Shahzad's ton helps Afghanistan pull off tie against India in Asia Cup Super 4 clash" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Mohammad Shahzad's ton helps Afghanistan pull off tie against India in Asia Cup Super 4 clash" title="Mohammad Shahzad's ton helps Afghanistan pull off tie against India in Asia Cup Super 4 clash" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/000_19F8RL_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Mohammad Shahzad's ton helps Afghanistan pull off tie against India in Asia Cup Super 4 clash</h3>
+    									<div class="date">Sep 26, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/india-thump-pakistan-twice-in-a-week-sail-into-asia-cup-finals-5249471.html" alt="India thump Pakistan twice in a week, sail into Asia Cup finals" title="India thump Pakistan twice in a week, sail into Asia Cup finals" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="India thump Pakistan twice in a week, sail into Asia Cup finals" title="India thump Pakistan twice in a week, sail into Asia Cup finals" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/Rohit-Sharma-940-AP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>India thump Pakistan twice in a week, sail into Asia Cup finals</h3>
+    									<div class="date">Sep 24, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/bhuvneshwar-kumar-kedar-jadhavs-three-for-rohit-sharmas-fifty-help-india-register-comfortable-win-over-pakistan-5223441.html" alt="Bhuvneshwar Kumar, Kedar Jadhav's three-for, Rohit Sharma's fifty help India register comfortable win over Pakistan" title="Bhuvneshwar Kumar, Kedar Jadhav's three-for, Rohit Sharma's fifty help India register comfortable win over Pakistan" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Bhuvneshwar Kumar, Kedar Jadhav's three-for, Rohit Sharma's fifty help India register comfortable win over Pakistan" title="Bhuvneshwar Kumar, Kedar Jadhav's three-for, Rohit Sharma's fifty help India register comfortable win over Pakistan" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/000_1991LW_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Bhuvneshwar Kumar, Kedar Jadhav's three-for, Rohit Sharma's fifty help India register comfortable win over Pakistan</h3>
+    									<div class="date">Sep 20, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/defending-champions-india-escape-huge-upset-in-their-asia-cup-opener-after-hong-kongs-spirited-fight-5216251.html" alt="Defending champions India escape huge upset in their Asia Cup opener after Hong Kong's spirited fight" title="Defending champions India escape huge upset in their Asia Cup opener after Hong Kong's spirited fight" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Defending champions India escape huge upset in their Asia Cup opener after Hong Kong's spirited fight" title="Defending champions India escape huge upset in their Asia Cup opener after Hong Kong's spirited fight" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/000_197895_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Defending champions India escape huge upset in their Asia Cup opener after Hong Kong's spirited fight</h3>
+    									<div class="date">Sep 19, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/alastair-cook-bows-out-of-international-cricket-in-style-as-england-hand-india-118-run-defeat-to-win-series-4-1-5178701.html" alt="Alastair Cook bows out of international cricket in style as England hand India 118-run defeat to win series 4-1" title="Alastair Cook bows out of international cricket in style as England hand India 118-run defeat to win series 4-1" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Alastair Cook bows out of international cricket in style as England hand India 118-run defeat to win series 4-1" title="Alastair Cook bows out of international cricket in style as England hand India 118-run defeat to win series 4-1" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/1-Alastair-Cook-century-AP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Alastair Cook bows out of international cricket in style as England hand India 118-run defeat to win series 4-1</h3>
+    									<div class="date">Sep 12, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/hosts-england-wrap-up-series-3-1-with-a-60-run-win-over-india-in-fourth-test-at-southampton-5102241.html" alt="Hosts England wrap up series 3-1 with a 60-run win over India in fourth Test at Southampton" title="Hosts England wrap up series 3-1 with a 60-run win over India in fourth Test at Southampton" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Hosts England wrap up series 3-1 with a 60-run win over India in fourth Test at Southampton" title="Hosts England wrap up series 3-1 with a 60-run win over India in fourth Test at Southampton" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/09/IvE-1.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Hosts England wrap up series 3-1 with a 60-run win over India in fourth Test at Southampton</h3>
+    									<div class="date">Sep 03, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/india-wrap-third-test-early-on-final-day-register-mammoth-203-run-win-to-keep-series-alive-5021111.html" alt="India wrap third Test early on final day, register mammoth 203-run win to keep series alive" title="India wrap third Test early on final day, register mammoth 203-run win to keep series alive" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="India wrap third Test early on final day, register mammoth 203-run win to keep series alive" title="India wrap third Test early on final day, register mammoth 203-run win to keep series alive" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/000_18I9KR_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>India wrap third Test early on final day, register mammoth 203-run win to keep series alive</h3>
+    									<div class="date">Aug 22, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/virat-kohli-and-co-set-the-foundation-on-day-3-for-bowlers-as-india-eye-first-win-of-test-series-5010901.html" alt="Virat Kohli and Co set the foundation on Day 3 for bowlers as India eye first win of Test series" title="Virat Kohli and Co set the foundation on Day 3 for bowlers as India eye first win of Test series" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Virat Kohli and Co set the foundation on Day 3 for bowlers as India eye first win of Test series" title="Virat Kohli and Co set the foundation on Day 3 for bowlers as India eye first win of Test series" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/Cook-Jennings_opt1.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Virat Kohli and Co set the foundation on Day 3 for bowlers as India eye first win of Test series</h3>
+    									<div class="date">Aug 21, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/hardik-pandyas-maiden-five-wicket-haul-puts-india-in-firm-control-on-day-2-5002881.html" alt="Hardik Pandya's maiden five-wicket haul puts India in firm control on Day 2" title="Hardik Pandya's maiden five-wicket haul puts India in firm control on Day 2" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Hardik Pandya's maiden five-wicket haul puts India in firm control on Day 2" title="Hardik Pandya's maiden five-wicket haul puts India in firm control on Day 2" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/Virat-Pujara-Day-2_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Hardik Pandya's maiden five-wicket haul puts India in firm control on Day 2</h3>
+    									<div class="date">Aug 20, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/virat-kohli-ajinkya-rahane-revive-india-with-159-run-stand-after-anxious-start-on-day-1-4996061.html" alt="Virat Kohli, Ajinkya Rahane revive India with 159-run stand after anxious start on Day 1" title="Virat Kohli, Ajinkya Rahane revive India with 159-run stand after anxious start on Day 1" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Virat Kohli, Ajinkya Rahane revive India with 159-run stand after anxious start on Day 1" title="Virat Kohli, Ajinkya Rahane revive India with 159-run stand after anxious start on Day 1" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/Rishabh-Pant_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Virat Kohli, Ajinkya Rahane revive India with 159-run stand after anxious start on Day 1</h3>
+    									<div class="date">Aug 19, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/england-beat-india-by-an-innings-and-159-runs-as-virat-kohli-and-co-fail-to-find-answer-for-hosts-bowling-attack-4953351.html" alt="England beat India by an innings and 159 runs as Virat Kohli and Co fail to find answer for hosts' bowling attack" title="England beat India by an innings and 159 runs as Virat Kohli and Co fail to find answer for hosts' bowling attack" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="England beat India by an innings and 159 runs as Virat Kohli and Co fail to find answer for hosts' bowling attack" title="England beat India by an innings and 159 runs as Virat Kohli and Co fail to find answer for hosts' bowling attack" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/England-team-940-Reuters.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>England beat India by an innings and 159 runs as Virat Kohli and Co fail to find answer for hosts' bowling attack</h3>
+    									<div class="date">Aug 13, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/chris-woakes-slams-maiden-ton-helps-england-gain-massive-lead-over-india-on-day-3-of-2nd-test-4949191.html" alt="Chris Woakes slams maiden ton, helps England gain massive lead over India on Day 3 of 2nd Test" title="Chris Woakes slams maiden ton, helps England gain massive lead over India on Day 3 of 2nd Test" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Chris Woakes slams maiden ton, helps England gain massive lead over India on Day 3 of 2nd Test" title="Chris Woakes slams maiden ton, helps England gain massive lead over India on Day 3 of 2nd Test" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/1-Chris-Woakes-century-AFP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Chris Woakes slams maiden ton, helps England gain massive lead over India on Day 3 of 2nd Test</h3>
+    									<div class="date">Aug 12, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/james-andersons-five-for-leads-the-way-as-england-pacers-dismantle-india-on-day-2-of-lords-test-4944911.html" alt="James Anderson's five-for leads the way as England pacers dismantle India on Day 2 of Lord's Test" title="James Anderson's five-for leads the way as England pacers dismantle India on Day 2 of Lord's Test" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="James Anderson's five-for leads the way as England pacers dismantle India on Day 2 of Lord's Test" title="James Anderson's five-for leads the way as England pacers dismantle India on Day 2 of Lord's Test" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/1-James-Anderson-fifer-AP-social.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>James Anderson's five-for leads the way as England pacers dismantle India on Day 2 of Lord's Test</h3>
+    									<div class="date">Aug 11, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/ben-stokes-raging-spell-douses-virat-kohlis-bravado-propelling-england-to-victory-in-edgbaston-test-4893561.html" alt="Ben Stokes' raging spell douses Virat Kohli's bravado, propelling England to victory in Edgbaston Test" title="Ben Stokes' raging spell douses Virat Kohli's bravado, propelling England to victory in Edgbaston Test" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Ben Stokes' raging spell douses Virat Kohli's bravado, propelling England to victory in Edgbaston Test" title="Ben Stokes' raging spell douses Virat Kohli's bravado, propelling England to victory in Edgbaston Test" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/08/PP-3-Reuters_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Ben Stokes' raging spell douses Virat Kohli's bravado, propelling England to victory in Edgbaston Test</h3>
+    									<div class="date">Aug 04, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/joe-root-adil-rashid-engineer-series-win-against-india-as-skipper-virat-kohli-loses-first-bilateral-series-4768591.html" alt="Joe Root, Adil Rashid engineer series win against India as skipper Virat Kohli loses first bilateral series" title="Joe Root, Adil Rashid engineer series win against India as skipper Virat Kohli loses first bilateral series" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Joe Root, Adil Rashid engineer series win against India as skipper Virat Kohli loses first bilateral series" title="Joe Root, Adil Rashid engineer series win against India as skipper Virat Kohli loses first bilateral series" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/AP18198705477547_opt-1.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Joe Root, Adil Rashid engineer series win against India as skipper Virat Kohli loses first bilateral series</h3>
+    									<div class="date">Jul 18, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/joe-roots-ton-england-spinners-collective-effort-helped-hosts-beat-india-by-86-runs-in-2nd-odi-4745491.html" alt="Joe Root's ton, England spinners' collective effort helped hosts beat India by 86 runs in 2nd ODI" title="Joe Root's ton, England spinners' collective effort helped hosts beat India by 86 runs in 2nd ODI" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Joe Root's ton, England spinners' collective effort helped hosts beat India by 86 runs in 2nd ODI" title="Joe Root's ton, England spinners' collective effort helped hosts beat India by 86 runs in 2nd ODI" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/AP18195650708636_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Joe Root's ton, England spinners' collective effort helped hosts beat India by 86 runs in 2nd ODI</h3>
+    									<div class="date">Jul 15, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/kuldeep-yadav-six-for-rohit-sharma-ton-floors-england-in-opening-odi-india-take-early-lead-in-series-4735771.html" alt="Kuldeep Yadav six-for, Rohit Sharma ton floors England in opening ODI, India take early lead in series" title="Kuldeep Yadav six-for, Rohit Sharma ton floors England in opening ODI, India take early lead in series" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Kuldeep Yadav six-for, Rohit Sharma ton floors England in opening ODI, India take early lead in series" title="Kuldeep Yadav six-for, Rohit Sharma ton floors England in opening ODI, India take early lead in series" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/000_17J98K_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Kuldeep Yadav six-for, Rohit Sharma ton floors England in opening ODI, India take early lead in series</h3>
+    									<div class="date">Jul 13, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/rohit-sharma-scores-third-century-ms-dhoni-becomes-first-player-with-50-catches-as-india-win-t20i-series-against-england-4698191.html" alt="Rohit Sharma scores third century, MS Dhoni becomes first player with 50 catches as India win T20I series against England" title="Rohit Sharma scores third century, MS Dhoni becomes first player with 50 catches as India win T20I series against England" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Rohit Sharma scores third century, MS Dhoni becomes first player with 50 catches as India win T20I series against England" title="Rohit Sharma scores third century, MS Dhoni becomes first player with 50 catches as India win T20I series against England" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/Rohit-Sharma-940-AP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Rohit Sharma scores third century, MS Dhoni becomes first player with 50 catches as India win T20I series against England</h3>
+    									<div class="date">Jul 09, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/alex-hales-bowlers-script-five-wicket-victory-over-india-as-england-level-three-match-t20i-series-4688251.html" alt="Alex Hales, bowlers script five-wicket victory over India as England level three-match T20I series" title="Alex Hales, bowlers script five-wicket victory over India as England level three-match T20I series" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Alex Hales, bowlers script five-wicket victory over India as England level three-match T20I series" title="Alex Hales, bowlers script five-wicket victory over India as England level three-match T20I series" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/RTS1VM8E_opt.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Alex Hales, bowlers script five-wicket victory over India as England level three-match T20I series</h3>
+    									<div class="date">Jul 07, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						    						<li>
+    							<a href="https://www.firstpost.com/firstcricket/photo-gallery/kuldeep-yadav-kl-rahul-make-merry-as-india-thrash-england-at-manchester-to-start-t20i-series-on-strong-note-4664801.html" alt="Kuldeep Yadav, KL Rahul make merry as India thrash England at Manchester to start T20I series on strong note" title="Kuldeep Yadav, KL Rahul make merry as India thrash England at Manchester to start T20I series on strong note" class="item">
+    								<div class="img-outer">
+    										
+											<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADAQMAAACOOjyFAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjAAMAAAYAAegKKqQAAAAASUVORK5CYII=" alt="Kuldeep Yadav, KL Rahul make merry as India thrash England at Manchester to start T20I series on strong note" title="Kuldeep Yadav, KL Rahul make merry as India thrash England at Manchester to start T20I series on strong note" style="width:100%; background:url(https://images.firstpost.com/wp-content/uploads/2018/07/1-Kuldeep-Yadav-celebrates-AP.jpg); -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;" />
+
+																			</div>
+    								<div class="desc">
+    									<h3>Kuldeep Yadav, KL Rahul make merry as India thrash England at Manchester to start T20I series on strong note</h3>
+    									<div class="date">Jul 04, 2018</div>
+    								</div>
+    							</a>
+    						</li>
+    						
+    					</ul>
+    			</div>
+
+    			<div class="clearfix text-center pull-right news-pager hidden-xs">
+                  	  <!-- Pagination Widget Start -->
+                  		               <nav aria-label="Page navigation example" class="pagination-wrap">
+                  <ul class="pagination">
+                                                                                                             <li class="page-item"><a class="page-link active" href="https://www.firstpost.com/firstcricket/photo-gallery/page/1">1</a></li>
+                                                                                        <li class="page-item"><a class="page-link " href="https://www.firstpost.com/firstcricket/photo-gallery/page/2">2</a></li>
+                                                                                        <li class="page-item"><a class="page-link " href="https://www.firstpost.com/firstcricket/photo-gallery/page/3">3</a></li>
+                    
+                    
+                                        <li class="page-item">
+                      <a rel="next" class="page-link" href="https://www.firstpost.com/firstcricket/photo-gallery/page/2" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                                      </ul>
+                </nav><!--pagination-->              
+                    <!-- Pagination Widget End -->						
+  
+                </div>
+
+		</div>
+		
+<style type="text/css">
+    .panel{
+    border: #e51332 solid 1px;
+    margin-bottom: 15px;
+    width: 300px;
+    margin: 10px auto;
+  }
+  .tab-content .fade{
+    opacity: 1 !important;
+  }
+  .panel-danger>.panel-heading {
+    color: #fff;
+    background-color: #ed2824;
+    border-color: #e51332;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    font-family: 'Open Sans','Segoe UI','Avenir Next',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#top-stories-tab {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+#top-stories-tab a {
+  color: #ed2824;
+  width: 100%;
+  display: block;
+}
+#top-stories-tab a:hover{
+  background: #f0f0f0;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+#top-stories-tab .active a {
+    background: #000;
+    color: #fff;
+    font-weight: 800;
+    display: block;
+}
+#top-stories-tab .active a:hover{
+  color: #f0f0f0 !important;
+}
+.tab-content .list{
+  padding: 0;
+}
+#top-stories-tab li {
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin-bottom: -1px;
+}
+#top-stories-tab li a {
+    font-family: 'Open Sans','Segoe UI','Avenir Next',sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    border: 0;
+    padding: 5px 15px;
+}
+.panel.panel-danger .panel-body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 705px;
+    padding: 15px;
+}
+.list.side-img li{
+      padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.list.side-img li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: inline-block;
+    color: #000;
+}
+.list.side-img li a:hover p{
+    color: #ed2824;
+}
+.list.side-img .featured-item a:hover p{
+  color: black;
+}
+.list.side-img li a img {
+    width: 30%;
+    height: auto;
+    display: block;
+    height: auto;
+    float: left;
+}
+.list.side-img li a p {
+    width: 70%;
+    font-size: 12px;
+    line-height: 1.25;
+    float: left;
+    padding-left: 10px;
+}
+.list.side-img li.featured-item img {
+  display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center top!important;
+}
+.list.side-img li.featured-item p {
+   font-family: "Titillium Web",sans-serif;
+    width: 100%;
+    float: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-top: 5px;
+    padding-left: 0;
+}
+.top-story-wrap .panel-danger>.panel-heading{
+        background-image: -webkit-linear-gradient(top,#ed2824 0,#ed2824 100%);
+    background-image: -o-linear-gradient(top,#ed2824 0,#ed2824 100%);
+    background-image: linear-gradient(to bottom,#ed2824 0,#ed2824 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
+   }.top-story-wrap .list.side-img li a p{
+    color: #000;
+   }
+   #top-stories-tab{
+    margin-top: 0;
+   }   
+</style>
+
+<div class="col-lg-3 col-md-4 padding-0">        
+    
+    <!-- Video Widget Start -->
+    <!--     <div class="panel panel-danger panel-top-stories sidebar-video">
+    <div class="panel-heading"><h3 class="panel-title text-center">India ka fashion capital – Powered by Flipkart Fashion</h3></div>
+    <iframe width="298" height="168" src="https://www.youtube.com/embed/igNcu_JuLDQ?rel=0&autoplay=1&mute=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+</div> -->
+    <br/>
+
+		<div class="hidden-xs ad text-center ad-block-one "> <div id='FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x250_1'><script type='text/javascript'>
+                            var width = window.innerWidth || document.documentElement.clientWidth;
+                            adKey = 'FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x250_1';
+                            if (width >= 768 && (adKey.indexOf('FirstPost') != -1 || adKey.indexOf('Tech') != -1) && adKey.indexOf('FirstPost_Wap_New') < 0) {
+                                googletag.cmd.push(function() { googletag.display('FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x250_1') });
+                            }
+                            if (width < 768 && adKey.indexOf('FirstPost_Wap_New') != -1) {
+                                googletag.cmd.push(function() { googletag.display('FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x250_1') });
+                            }
+                        </script></div> </div>
+		<div class="ad  text-center">  </div>
+		<br>
+		<div class="hidden-xs text-center ad-block-major"> <div id='FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x600'><script type='text/javascript'>
+                            var width = window.innerWidth || document.documentElement.clientWidth;
+                            adKey = 'FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x600';
+                            if (width >= 768 && (adKey.indexOf('FirstPost') != -1 || adKey.indexOf('Tech') != -1) && adKey.indexOf('FirstPost_Wap_New') < 0) {
+                                googletag.cmd.push(function() { googletag.display('FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x600') });
+                            }
+                            if (width < 768 && adKey.indexOf('FirstPost_Wap_New') != -1) {
+                                googletag.cmd.push(function() { googletag.display('FirstPost/FirstPost_Sports/FirstPost_Sports_HP/FirstPost_Sports_HP_300x600') });
+                            }
+                        </script></div> </div><br />
+        					<div class="w
+		        		<br />
+
+		
+
+	]
+                                
+        
+    
+<script>
+    $(document).ready(function () {
+        $('.cnAdzerkDiv').hide();
+    });
+</script>
+	</div>
+
+
+</section><style>
+.wrapper .ad {
+    background: none;
+	}
+</style>
+<div class="text-center interclass">
+	 <script type="text/javascript">  	 
+        interstitial_ad();
+        function FPsetcookie(c_name,value,expiredays){
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate()+expiredays);
+            document.cookie=c_name+ "=" +escape(value)+ ";path=/;domain=;" +((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+        }    
+        function FPgetcookie(cookiename) {
+            var cookiestring=document.cookie;                
+            var cookieArry = cookiestring.split(";");
+            var index1=cookieArry.indexOf(" interstitial=1");        
+            return index1;
+        }
+        function interstitial_ad() { 
+            var width = window.innerWidth || document.documentElement.clientWidth;       
+            var interstitial_adv = "";            
+                interstitial_adv = FPgetcookie("interstitial");                                
+                if (interstitial_adv > 0){                          
+                         var adKey = "";
+                           if(width <= 768) {                                
+                                $(".interclass").attr("id",adKey);     
+                                googletag.cmd.push(function() { googletag.display(adKey); });
+                             }
+                }
+                else{
+                    FPsetcookie('interstitial',1,7);                    
+                }                
+    }     
+</script>
+
+</div>
+</body>
+</html>  
