@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html class="no-js" prefix="og: http://ogp.me/ns#"  lang="en-IN">
+   <head>
+     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>Analysis</title>
+        
+        <link href="img/logo_icon_96dp.png" rel="apple-touch-icon" sizes="96x96">
+        <link href="img/logo_icon_96dp.png" rel="icon" sizes="96x96" type="image/png">
+        <link href="img/logo_icon_32dp.png" rel="icon" sizes="32x32" type="image/png">
+       
+        <link rel='stylesheet' href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/app.css">
+
+    </head>
+
+    <body style="background-color: darkgrey;">
+
+        <!-- TOPNAVBAR 
+            =================-->
+            <div class="topmenu">
+              <div class="container-fluid">
+                <div class="row"  id="page-top">
+                  <div class="col-md-6 col-sm-6"> 
+                   <div class="info">Cricket Score <i class="fa fa-long-arrow-right"></i>  Analysis</div>
+                  </div>   
+                  <div class="col-md-6 sec col-sm-6">  
+                  	<div class="social"> 
+                  		<ul>
+                  			<li>Social Corner </li>
+                  			<li><a href="#"><i class="fa fa-facebook"></a></i></li>
+                  			<li><a href="#"><i class="fa fa-twitter"></a></i></li>
+                  			<li><a href="#"><i class="fa fa-google-plus"></a></i></li>
+                  		</ul>
+                  	</div> 
+                  </div>
+                </div>
+              </div>
+            </div>  
+        
+        <!-- NAVBAR 
+            =================-->
+         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" data-toggle="affix" style="background-color: darkslategrey;">
+              <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" class="img-fluid"  width="45"></a>
+              
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="score.html">Live Score</a>
+                    </li>
+                        
+                       <li class="nav-item">
+                      <a class="nav-link active" href="analysis.html">Analysis</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="calendar.html">Calendar</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="team.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="photo.html">Photo</a>
+                    </li> 
+                       <li class="nav-item">
+                      <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                       <li class="nav-item">
+                      <a class="nav-link" href="news.html">News</a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </nav> 
+
+    
+    
+    
+    
+    
+    
+    
+    <!-- CHARTS
+            =================-->
+    
+    
+  <script type="text/javascript">
+		
+		function UpdateRange(v)
+		{
+			switch(v)
+			{
+				case "india":
+				var a=["kohli","sachin","dhoni"];
+                    var b=["kohli.htm","sachin.htm","dhoni.htm"];
+                    var len=a.length;
+				break;
+				
+				case "usa":
+				var a=["u1","u2","u3"];
+                    var b=["kohli.htm","sachin.htm","dhoni.htm"];
+                    var len=a.length;
+				break;
+				
+				case "australia":
+				var a=["Steve Smith","a2","a3"];
+                    var b=["http://localhost:8000/sourcecode/disptable.php","sachin.htm","dhoni.htm"];
+                    var len=a.length;
+				break;
+				
+				case "england":
+				var a=["e1","e2","e3"];
+                    var b=["kohli.htm","sachin.htm","dhoni.htm"];
+                    var len=a.length;
+				break;
+			}
+			
+			
+			//clear all options from list
+			document.getElementById('user_defn_day').options.length = 0;		
+                        //add default (blank) option
+			var optn = document.createElement("OPTION");
+			optn.text = '';
+			optn.value = '';
+			
+                     document.getElementById('user_defn_day').options.add(optn)						
+
+                        //loop through and add range numbers
+			for(var i=0;i<len;i++)
+			{
+				var optn = document.createElement("OPTION");
+				optn.text = a[i];
+				optn.value = b[i];
+				document.getElementById('user_defn_day').options.add(optn)				
+			}
+            
+            
+            
+		}
+       
+        function UpdateRangeover(mySelect){
+            PageIndex2=mySelect.selectedIndex;
+
+{
+
+if
+
+(
+
+mySelect.options[PageIndex2].value != "none"
+
+)
+
+{
+
+
+frames['iframe2'].location.href = mySelect.options[PageIndex2].value;
+
+}
+
+}
+        }
+        
+	</script>
+	  
+    
+  
+    
+    
+<form name="frmMain">
+
+Select Country:	
+<select id="user_defn_uom" style="width:200px;"  name="user_defn_uom" onchange="UpdateRange(this.value);" align="center">
+<option selected value="">choose country</option>
+<option value="india">india</option>
+<option value="usa">usa</option>
+<option value="australia">australia</option>
+<option value="england">england</option>
+</select>
+
+<br>
+    <br>
+    <br>
+Select Player:
+<select id="user_defn_day" name="user_defn_day" style="width:200px;" align="center" onchange="UpdateRangeover(this.form.user_defn_day);">
+    <option selected value="">choose player</option>
+</select>
+
+</form>
+    <iframe   name="iframe2" src="analysis//blank.html"  height="440px" width="80%" hspace="10" vspace="10"  align="right"></iframe>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+         
+    </body>
+</html>
